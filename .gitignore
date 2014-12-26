@@ -1,2 +1,7 @@
 .DS_Store
-MongoDB-Introduction.iml
+.svn
+log/*.log
+tmp/**
+node_modules/
+.sass-cache
+.idea/
