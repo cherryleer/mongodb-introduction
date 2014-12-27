@@ -250,12 +250,38 @@
 
                 <section>
                     <h2>Query Routers</h2>
+                <ul>
+                    <li>Process and target operations to shards</li>
+                    <li>Return results to clients</li>
+                    <li>Each query router is a mongos instance</li>
+                </ul>
+                </section>
+
+                <section>
+                    <h2>Config Servers</h2>
                     <ul>
-                        <li>Process and target operations to shards</li>
-                        <li>Return results to clients</li>
-                        <li>Each query router is a mongos instance</li>
+                        <li>Store the cluster's metadata which maps chunks to shards</li>
+                        <li>The query router uses metadata to target opeartions to specific shards</li>
+                        <li>Each config server is a mongod instance</li>
                     </ul>
                 </section>
+
+                <section>
+                    <h2>Shard Keys</h2>
+                    <p>
+                        The shard key determines the distribution of the collection’s documents among the cluster’s shards.
+                    </p>
+                    <img src="images/shard%20keys.png">
+                </section>
+
+                <section>
+                    <h2>Sharded Collection Balancing</h2>
+                    <p>
+                        Balancing is the process MongoDB uses to distribute data of a sharded collection evenly across a sharded cluster.
+                    </p>
+                    <img src="images/shard%20keys.png">
+                </section>
+
 
                 <section>
                     <h2>Replication Set Election</h2>
