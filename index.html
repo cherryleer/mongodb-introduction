@@ -178,30 +178,88 @@
 
                 <section>
                     <h2>Priority 0 Secondary</h2>
+                    <img src="images/priority0.png">
                     <ul>
                         <li>Can not become primary</li>
                     </ul>
-                    <img src="images/priority0.png">
                 </section>
 
                 <section>
                     <h2>Hidden Secondary</h2>
+                    <img src="images/hidden.png">
                     <ul>
                         <li>Must be priority 0</li>
                         <li>Cannot read</li>
                         <li>For backup</li>
                     </ul>
-                    <img src="images/hidden.png">
                 </section>
 
                 <section>
                     <h2>Delayed Secondary</h2>
+                    <img src="images/delayed.png">
                     <ul>
                         <li>Must be hidden</li>
                         <li>Keep an earlier or delayed state of the set</li>
                         <li>For rollback</li>
                     </ul>
-                    <img src="images/delayed.png">
+                </section>
+
+                <section>
+                    <h2>Replication Set Election</h2>
+                    <img src="images/election.png">
+                </section>
+
+                <section>
+                    <h2>Election Triggering Events</h2>
+                    <P>
+                        An election happens when:
+                    </P>
+                    <ul>
+                        <li>The initiation of a new replica set</li>
+                        <li>A secondary loses contact with a primary</li>
+                        <li>A primary step down</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Election Factors and Conditions</h2>
+                    <ul>
+                        <li>Heartbeats</li>
+                        <li>Priority</li>
+                        <li>Optime</li>
+                        <li>Connections</li>
+                        <li>Network Partitions</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Sharding</h2>
+                    <p>
+                        Sharding is a method fot storing data across multiple machines.
+                    </p>
+                    <img src="images/sharding.png">
+                </section>
+
+                <section>
+                    <h2>Shards</h2>
+                    <ul>
+                        <li>Hold a subset of a collection's data</li>
+                        <li>Each shard is a mongod instance or a replication set</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Query Routers</h2>
+                    <ul>
+                        <li>Process and target operations to shards</li>
+                        <li>Return results to clients</li>
+                        <li>Each query router is a mongos instance</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Replication Set Election</h2>
+                    <img src="images/election.png">
                 </section>
 
                 <section>
