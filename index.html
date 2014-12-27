@@ -48,6 +48,7 @@
                         <small>Created by <a href="http://happytechgroup.github.io">Happy Tech Group</a> / <a href="http://cherrylee.github.com">@cherrylee</a></small>
                     </p>
                 </section>
+
                 <section>
                     <h1>Contents</h1>
                     <ul>
@@ -56,12 +57,14 @@
                         <li>Sharding</li>
                     </ul>
                 </section>
+
 				<section>
 					<h2>Introduction</h2>
 					<p>
                         MongoDB is an open-source document database that provides high perfotmance, high availability, and automatic scaling.
                     </p>
 				</section>
+
                 <section>
                     <h1>Key Features</h1>
                     <ul>
@@ -70,6 +73,7 @@
                         <li>Automatic Scaling</li>
                     </ul>
                 </section>
+
                 <section>
                     <h2>BSON</h2>
                     <p>
@@ -77,40 +81,127 @@
                     </p>
                     <img src="images/json%20objects.png">
                 </section>
+
                 <section>
                     <img src="images/bson.png">
                 </section>
+
                 <section>
                     <h2>SQL to MongoDB</h2>
                     <img src="images/sql%20to%20mongodb.png">
                 </section>
+
                 <section>
                     <h2>SQL to MongoDB Aggregation</h2>
-                    <img src="images/to%20aggrefation.png">
+                    <img src="images/to%20aggrefation.jpg">
                 </section>
+
                 <section>
                     <h2>Executable</h2>
                     <img src="images/executables.png">
                 </section>
+
                 <section>
                     <h2>Create and Drop</h2>
                     <img src="images/create%20and%20drop.jpg">
                 </section>
+
                 <section>
                     <h2>Insert</h2>
                     <img src="images/insert.png">
                 </section>
+
                 <section>
                     <h2>Select</h2>
-                    <img src="images/select1.png">
+                    <img src="images/select1.jpg">
                 </section>
+
                 <section>
                     <h2>Select</h2>
-                    <img src="images/select2.png">
+                    <img src="images/select2.jpg">
                 </section>
+
                 <section>
-                    <h2>SQL to MongoDB</h2>
-                    <img src="images/sql%20to%20mongodb.png">
+                    <h2>Select</h2>
+                    <img src="images/select3.png">
+                </section>
+
+                <section>
+                    <h2>Select</h2>
+                    <img src="images/select4.png">
+                </section>
+
+                <section data-state="customevent">
+                    <h2>Start</h2>
+                    <p>
+                        Start MongoDB with a <a href="http://docs.mongodb.org/manual/reference/configuration-options/">configuration file</a>.
+                    </p>
+					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+                        mongod --config /etc/mongodb.conf
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h2>Replication</h2>
+                    <p>
+                        A replica set is a group of mongod instances that host the same data set.
+                    </p>
+                    <img src="images/replication.png">
+                </section>
+
+                <section>
+                    <h2>Replication set Members</h2>
+                    <ul>
+                        <li>Primary</li>
+                        <li>Secondary</li>
+                        <li>Arbiter</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Primary</h2>
+                    <ul>
+                        <li>The only member receives write operations</li>
+                        <li>Only one</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Secondary</h2>
+                    <ul>
+                        <li>Maintain a copy</li>
+                        <li>Can become a primary</li>
+                        <li>One or more secondaries</li>
+                        <li>Specific: priority 0; hidden; delayed</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Priority 0 Secondary</h2>
+                    <ul>
+                        <li>Can not become primary</li>
+                    </ul>
+                    <img src="images/priority0.png">
+                </section>
+
+                <section>
+                    <h2>Hidden Secondary</h2>
+                    <ul>
+                        <li>Must be priority 0</li>
+                        <li>Cannot read</li>
+                        <li>For backup</li>
+                    </ul>
+                    <img src="images/hidden.png">
+                </section>
+
+                <section>
+                    <h2>Delayed Secondary</h2>
+                    <ul>
+                        <li>Must be hidden</li>
+                        <li>Keep an earlier or delayed state of the set</li>
+                        <li>For rollback</li>
+                    </ul>
+                    <img src="images/delayed.png">
                 </section>
 
                 <section>
